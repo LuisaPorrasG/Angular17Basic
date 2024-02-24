@@ -1,0 +1,20 @@
+<hr>
+<h2>Este es un componente denomido USER</h2>
+<hr>
+
+<section>
+<!--Nuevas directrices en anguar 17-->
+@if (isLoggedIn){
+        <P>Bienvenido {{username}}</P>
+        <img (click)="greet()" alt="photo" src="https://github.com/luisaporrasg.png"/>
+
+}@else {
+        <p>¡Inicia Sesion!</p>
+        <br>
+        <br>
+        <br>
+        <button (click)="isLoggedIn = true"> Log In</button>
+}
+        <app-games username= "{{username}}"> </app-games>
+
+</section>
